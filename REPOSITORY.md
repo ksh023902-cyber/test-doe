@@ -7,14 +7,17 @@
 
 ## 코드 / npm
 
-- **실제 웹앱은 전부 `test-doe/`** 아래입니다.
-- 설치·실행·빌드는 항상 여기서:
+- **실제 웹앱은 저장소 안의 하위 폴더 `test-doe/`** 입니다.
+- GitHub에서 `git clone` 하면 **폴더 이름이 저장소 이름**이라 보통 `test-doe/test-doe/` 가 앱 루트가 됩니다. (한 단계 더 들어가기)
+- 설치·실행·빌드는 항상 **앱 루트(`…/test-doe/test-doe`)** 에서:
 
 ```sh
-cd test-doe
+cd test-doe/test-doe
 npm install
 npm run dev
 ```
+
+- 로컬에서 워크스페이스가 `TEXT`이고 그 안에 `test-doe`만 있을 때는 `TEXT/test-doe` 한 겹이면 됩니다.
 
 - **`TEXT` 루트에는 `package.json`을 두지 않습니다.** (의존성은 `test-doe`만 사용)
 
