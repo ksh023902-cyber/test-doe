@@ -6,6 +6,8 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Capacitor loads the bundle from the app WebView; relative base avoids broken asset URLs.
+  base: './',
   plugins: [
     vue(),
     vueDevTools(),
